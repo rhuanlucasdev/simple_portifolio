@@ -1,0 +1,11 @@
+/* Global */
+@import url(./global/global.css);
+
+/* Utilitarios */
+@import url(./utilitarios/componentes.css);
+@import url(./utilitarios/colors.css);
+@import url(./utilitarios/typo.css);
+
+/* Estilo Principal */
+@import url(./main/introducao.css);
+@import url(./main/projetos.css);
