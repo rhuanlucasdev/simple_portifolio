@@ -42,5 +42,7 @@ Este é um portfólio pessoal simples que criei durante um período de ociosidad
 Sinta-se à vontade para contribuir para este projeto! Aqui estão algumas maneiras de como você pode ajudar:
 
 **1. Relatar erros:** Se encontrar algum erro ou bug, por favor, crie uma issue para que eu possa corrigir.
+
 **2. Sugestões:** Se você tem sugestões de melhorias, como funcionalidades ou design, crie uma issue ou envie um pull request.
+
 **3. Ajudar no desenvolvimento:** Se você tiver conhecimento em HTML, CSS ou JavaScript, suas contribuições serão bem-vindas.
