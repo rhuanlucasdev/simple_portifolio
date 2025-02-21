@@ -16,7 +16,7 @@
 .apresentacao-img {
     width: 500px;
     height: 500px;
-    border-radius: 8px;
+    border-radius: 50px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -61,6 +61,12 @@
 }
 
 @media (max-width: 500px) {
+    .apresentacao-content h1{
+        font-size: 3rem;
+    }
+    .apresentacao-content h2 {
+        font-size: 1.25rem;
+    }
     .apresentacao-img {
     display: none;
     }

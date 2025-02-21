@@ -1,11 +1,12 @@
 .projetos-bg {
-    text-align: center;
+    text-align: left;
     background-color: var(--cor-2);
     border-radius: 4px;
     padding: 120px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 10px 10px 25px -3px rgba(0,0,0,.5);
 }
 
 .titulo {
@@ -32,6 +33,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     align-items: center;
+    box-shadow: 10px 10px 25px -3px rgba(0,0,0,.5);
 }
 
 .projetos-img {
@@ -82,16 +84,58 @@
     padding: 10px 20px;
     border-radius: 4px;
     background: var(--cor-tx4);
+    margin-bottom: 20px;
+}
+
+.projetos-content {
+    position: relative;
+}
+
+.projetos-content::after {
+    content: "";
+    display: inline-block;
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
 }
 
 @media (max-width: 1000px) {
     .projetos {
         grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+    .projetos-content {
+        text-align: center;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+    .projetos-bg {
+        padding: 40px 20px;
+    }
+    .titulo {
+        text-wrap: wrap;
+        font-size: 1rem;
+    }
     .projetos {
-        padding-top: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .projetos-content h4 {
+        max-width: 100%;
+    }
+    .projetos-content ul {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .titulo h2 {
+        font-size: 1.5rem; /* Reduz o tamanho sem perder a proporção */
+        padding: 0 10px; /* Evita que o título fique colado nas bordas */
     }
 }

@@ -1,0 +1,119 @@
+.contact-section {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #1e1e1e;
+    color: #dcdcdc;
+    padding: 60px;
+    font-family: 'Fira Code', monospace;
+  }
+  
+  pre {
+    background-color: #252526;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.2rem; /* Maior tamanho para melhor visualização */
+    overflow-x: auto;
+  }
+  .comment {
+    color: #6a9955;
+    font-size: 1.3rem; /* Comentários maiores para mais destaque */
+  }
+  
+  .keyword {
+    color: #569cd6;
+    font-weight: bold;
+  }
+  
+  .variable {
+    color: #9cdcfe;
+  }
+  
+  .string {
+    color: #ce9178;
+    font-weight: bold;
+  }
+  
+  .function {
+    color: #dcdcaa;
+  }
+  
+  .input-field, .textarea-field {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    width: 50%;
+    border-radius: 5px;
+  }
+  
+  .textarea-field {
+    height: 150px; 
+    resize: none; 
+  }
+  
+  .send-button {
+    background: linear-gradient(var(--cor-tx5), var(--cor-tx3));;
+    text-transform: uppercase;
+    color: var(--cor-3);
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .send-button:hover {
+    background: linear-gradient( #b18257, #94474d);
+  }
+  
+
+  /* 🔹 Responsividade */
+@media (max-width: 768px) {
+    .contact-section {
+      padding: 40px 20px;
+    }
+  
+    pre {
+      font-size: 1rem;
+      padding: 20px;
+    }
+  
+    .comment {
+      font-size: 1.1rem;
+    }
+  
+    .input-field, .textarea-field {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .send-button {
+      font-size: 1rem;
+      padding: 10px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    pre {
+      font-size: 0.9rem;
+      padding: 15px;
+    }
+  
+    .comment {
+      font-size: 1rem;
+    }
+  
+    .input-field, .textarea-field {
+      font-size: 0.85rem;
+      padding: 8px;
+    }
+  
+    .send-button {
+      font-size: 0.9rem;
+      padding: 8px 14px;
+    }
+  }

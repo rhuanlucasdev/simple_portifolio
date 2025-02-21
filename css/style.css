@@ -9,3 +9,5 @@
 /* Estilo Principal */
 @import url(./main/introducao.css);
 @import url(./main/projetos.css);
+@import url(./main/tecnologias.css);
+@import url(./main/contato.css);

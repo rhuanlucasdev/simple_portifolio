@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
     <title>Rhuan Lucas | Front-End Developer</title>
 </head>
 <body>
-    <main class="intro-bg">
+    <main class="intro-bg" aria-label="Apresentação de Rhuan">
         <div class="apresentacao-wrapper container">
             <div class="apresentacao-img">
                 <img src="./img/rhuan-intro.jpg" alt="Rhuan Lucas">
@@ -27,15 +28,15 @@
                     </div>
                     <div class="botao-grid">
                     <p class="font-1-m cor-tx5"><span class="cor-tx1">&lt;</span>Entre_em_contato:<span class="cor-tx1">&gt;</span></p>
-                    <a class="botao" href="./">contato</a>
+                    <a class="botao" href="#contato">contato</a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <section class="projetos-bg" id="projetos">
+    <section class="projetos-bg" id="projetos" aria-label="Projetos que trabalhei">
         <div class="titulo">
-            <h2 class="font-1-xl cor-tx3"><span class="cor-tx1">&lt;</span>Conheça_meus_projetos<span class="cor-tx1">&gt;</span></h2>
+            <h2 class="font-1-xxl cor-tx3"><span class="cor-tx1">&lt;</span>Conheça_meus_projetos<span class="cor-tx1">&gt;</span></h2>
         </div>
         <div class="projetos container">
             <div class="projetos-img">
@@ -50,7 +51,70 @@
                     <li>JavaScript</li>
                 </ul>
             </div>
+            <div class="projetos-img">
+                <a class="project-link" href="https://rhuanlucasdev.github.io/bikecraft/" target="_blank"><img src="./img/portfolio.png" alt="foto do projeto Bikcraft"></a>
+            </div>
+            <div class="projetos-content">
+                <h3 class="font-1-xl cor-tx4"><span class="cor-tx1">&lt;</span>Projeto_Portifolio()<span class="cor-tx1">&gt;</span></h3>
+                <h4 class="font-1-s cor-tx2"><span class="cor-tx2">&lt;</span>!-- Este é o um protótipo de um portfólio de desenvolvedor web, onde apresento meus projetos e habilidades em desenvolvimento front-end e full-stack. O site foi criado com um design responsivo e moderno, utilizando tecnologias como HTML, CSS, JavaScript e React. Aqui, você encontrará informações sobre mim, meus trabalhos e formas de contato. !--<span class="cor-tx2">&gt;</span></h4>
+                <ul class="tecnologias">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
         </div>
     </section>
+    <section class="stacks" aria-label="tecnologias que utilizo">
+        <h2 class="font-1-xxl cor-tx4 container"><span class="cor-tx1">&lt;</span>Tecnologias()<span class="cor-tx1">&gt;</span></h2>
+        <ul>
+          <li>
+            <img src="./img/logo-html5-svgrepo-com.svg" alt="HTML">
+          </li>
+          <li>
+            <img src="./img/css3-02-svgrepo-com.svg" alt="CSS">
+          </li>
+          <li>
+            <img src="./img/javascript-fill-svgrepo-com.svg" alt="JavaScript">
+          </li>
+          <li>
+            <img src="./img/logo-react-svgrepo-com.svg" alt="dogs">
+          </li>
+          <li>
+            <img src="./img/tailwind-svgrepo-com.svg" alt="lescone">
+          </li>
+          <li>
+            <img src="./img/typescript-svgrepo-com.svg" alt="flexblog">
+          </li>
+        </ul>
+      </section>
+
+      <section id="contato" class="contact-section container">
+        <div class="contato-titulo">
+            <h2 class="font-1-xxl cor-tx4 container"><span class="cor-tx1">&lt;</span>Contato()<span class="cor-tx1">&gt;</span></h2>
+        </div>
+        <pre>
+          <code class="language-js">
+            <span class="comment">// Entre em contato comigo 🚀</span>
+            <span class="keyword">const</span> <span class="variable">contato</span> = {
+              nome: "<span class='string'>Rhuan Lucas Carvalho</span>",
+              email: "<span class='string'>rhuanlucassbs@gmail.com</span>",
+              linkedin: "<a href='https://www.linkedin.com/in/rhuanlucasdev' target='_blank' class='string'>linkedin.com/in/rhuanlucasdev</a>",
+              github: "<a href='https://github.com/rhuanlucasdev' target='_blank' class='string'>github.com/rhuanlucasdev</a>"
+            };
+            
+            <span class="comment">// Formulário de Contato</span>
+            <span class="function">function</span> <span class="variable">enviarMensagem</span>() {
+              <span class="keyword">return</span> {
+                nome: "<input type='text' placeholder='Seu Nome' class='input-field' required>",
+                email: "<input type='email' placeholder='Seu Email' class='input-field' required>",
+                mensagem: "<textarea placeholder='Digite sua mensagem...' class='textarea-field' required></textarea>",
+                enviar: "<button type='submit' class='send-button'>Enviar</button>"
+              };
+            }
+          </code>
+        </pre>
+      </section>
+      
 </body>
 </html>
